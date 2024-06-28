@@ -2,7 +2,7 @@ import TransactionItem from "./TransactionItem";
 import getTransaction from "@/app/actions/getTransactions";
 import { Transaction } from "@/types/Transaction";
 
-const AddTransactionList = async () => {
+const TransactionList = async () => {
     const { transactions ,error } = await getTransaction();
     
     if (error) {
@@ -26,4 +26,4 @@ const AddTransactionList = async () => {
     </>);
 }
  
-export default AddTransactionList;
+export default TransactionList;
