@@ -6,7 +6,7 @@ const Balance = async () => {
 
     return (<>
         <h4>Your Balance</h4>
-        <h1>GMD4{currentFormatter(balance ?? 0)}</h1>
+        <h1>GMD4{currentFormatter(Number(balance?.toFixed(2) ?? 0))}</h1>
     </>);
 }
  
