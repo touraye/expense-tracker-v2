@@ -29,7 +29,7 @@ const TransactionItem = ({ transaction }: { transaction: Transaction }) => {
         <li className={transaction.amount < 0 ? 'minus' : 'plus'}>
             {transaction.text}
             <span>
-                {sign}${currentFormatter(Math.abs(transaction.amount))}
+                {sign}GMD{currentFormatter(Math.abs(transaction.amount))}
             </span>
             <button
                 onClick={() => handleDeleteTransaction(transaction.id)}
